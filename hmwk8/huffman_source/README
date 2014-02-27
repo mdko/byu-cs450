@@ -1,0 +1,18 @@
+This is a library for adaptive Huffman encoding, as described by Knuth
+in "Dynamic Huffman Coding", Journal of Algorithms vol 6.
+
+A test program 'compact' is compiled by default, which uses the
+algorithm to compress and uncompress files.  The driver is very simple
+and accepts only the -d flag, and will not use the standard io.  The
+-d flag or calling the program under the name 'uncompact' will cause
+it to uncompress.  It writes compressed files with a .jz extensions.
+
+The stats2header file takes 3 arguments, infile outfile table_name.
+infile is the name of a file containing whitespace separated numbers,
+the first being the alphabet size and the rest being the frequency of
+each element in the alphabet.
+
+Do not use zero-frequency elements in these stats files, I haven't
+accounted for those yet.
+
+This code is written by Josh MacDonald, jmacd@cs.berkeley.edu.

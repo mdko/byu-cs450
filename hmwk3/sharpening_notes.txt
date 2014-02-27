@@ -1,0 +1,13 @@
+radius: 3 --> 3-1/2 = 1 on each side of center
+    row, column to fill with neg ones is 1
+    0    -1   0
+    -1  A+4   -1
+    0   -1    0
+
+radius: 5 --> 5-1/2 = 2 on each side of center
+    row, column to fill with neg ones is 2 
+    0   0 -1   0 0
+    0   0 -1   0 0 
+    -1 -1 A+8 -1 -1
+    0   0 -1   0 0
+    0   0 -1   0 0
